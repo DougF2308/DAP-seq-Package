@@ -15,7 +15,7 @@ def main():
             tf = line.strip().split(':')[0]
             tf_list[tf] = set()
 
-    # Traverse through all peak counts files and count number of genes each TF appears in
+    # look through all peak counts files and count number of genes each TF appears in
     for root, dirs, files in os.walk(args.input_directory):
         for file in files:
             if file == 'peak_counts.txt':
