@@ -81,6 +81,7 @@ def search_for_instances():
 
 search_for_instances()
 
+#MULTIPROCESSING TEST - NOT WORKING
 #if __name__ == '__main__':
 #    NUM_PROCESSES = 4
 #    manager = Manager()
@@ -97,7 +98,7 @@ search_for_instances()
 #    for p in processes:
 #        p.join()
 
-# Create the output directories and write the peak counts to the appropriate files
+# Create the output directories and write the peak counts to the  files
 for promoter_name, tf_families in peaks_in_promoters.items():
     promoter_dir = os.path.join(Output_file, promoter_name.split(' | ')[0])
     if not os.path.exists(promoter_dir):
